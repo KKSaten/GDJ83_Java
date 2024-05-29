@@ -8,6 +8,12 @@ public class S2_Study2_2 {
 	
 	public static void main(String [] args) {
 		
+		//메모리 영역 구분
+		//1.메서드 영역						:클래스변수
+		//2.스택 영역:메서드가 실행될 떄 영역	:지역변수
+		//3.힙 영역						:인스턴스변수
+		
+		
 		//학생 수를 입력받은 다음 학생 수만큼 이름도 입력받고 국,영,수 점수도 입력받아서 최종 출력
 		Scanner sc = new Scanner(System.in);
 		
