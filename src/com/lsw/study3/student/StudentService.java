@@ -36,15 +36,40 @@ public class StudentService {
 			stds[i] = s;
 		}	
 		return stds;
-	}//학생정보 입력
+	}//입력 메서드 끝
 		
 	
-	public void print_student() {//학생정보 출력
+	public void print_student(Student[] stds) {//학생정보 출력
+		System.out.println("번호\t이름\t국어\t영어\t수학\t총점\t평균");
+		for(int i=0; i<stds.length; i++) {
+			System.out.println(stds[i].num + "\t" + stds[i].name + "\t" + stds[i].kor
+								+ "\t" + stds[i].eng + "\t" + stds[i].math + "\t" + 
+								stds[i].totals + "\t" + stds[i].avgs);
+		}//for문 끝
+		return;
+	}//출력 메서드 끝
+	
+	
+	public Student search_student(Student[] stds) {//학생정보 검색
 		
+		Scanner sc = new Scanner(System.in);
 		
-		System.out.println();
+		System.out.println("학생의 번호를 입력해주세요");
+		int n = sc.nextInt();
 		
-		
-	}//학생정보 출력
+		Student student = null;
+
+		for (int i = 0; i < stds.length; i++) {
+			if (n == stds[i].num) {
+				student = stds[i];
+				break;
+				// return students[i];
+			}//if문 끝
+		}//for문 끝
+
+		return student;
+	}//검색 메서드 끝
+	
+	
 
 }

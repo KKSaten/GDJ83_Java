@@ -13,6 +13,7 @@ public class StudentController {
 		boolean flag = true;
 		
 		StudentService service = new StudentService();
+		StudentView studentView = new StudentView();
 		Student[] stds = null;
 		
 		while(flag) {
@@ -22,9 +23,18 @@ public class StudentController {
 			if(select == 1) {//학생정보 입력
 				stds = service.make_student();
 			}else if(select == 2) {//학생정보 출력
-				service.print_student();
+				if (stds != null) {
+					studentView.view(stds);
+				} else {
+					studentView.view("학생 정보를 먼저 입력");
+				}
 			}else if(select == 3) {
-				System.out.println("학생정보 검색");
+				Student student = service.search_student(stds);
+				if (student != null) {
+					studentView.view(student);
+				} else {
+					studentView.view("검색 결과가 없습니다");
+				}
 			}else if(select == 4) {
 				System.out.println("프로그램 종료");
 				break;
