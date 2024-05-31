@@ -1,25 +1,36 @@
 package com.lsw.s4;
 
 public class S4Main {
-
+	
 	public static void main(String[] args) {
 		
-		//클래스변수
-		//클래스명 변수명
-		Car.company = "";
-		System.out.println(Car.company);
+		Tv tv = new Tv();
+		tv.brand = "Samsung";
+		tv.price = 500;
+		tv.point = 50;
+		tv.size = 100;
 		
-		//클래스명.메서드명();
-		Car.info();
+		Computer computer = new Computer();
+		computer.brand = "Apple";
+		computer.price = 300;
+		computer.point = 30;
+		computer.cpu = "M3";
 		
-		System.out.println(Math.E);
+		Phone phone = new Phone();
+		phone.brand = "LG";
+		phone.price = 150;
+		phone.point = 15;
+		phone.color = "Pink";
 		
-		double b = Math.abs(1.2);
-		System.out.println(b);
+		Customer customer = new Customer();
+		customer.money = 1000;
+		customer.point = 0;
 		
-//		Bird bird = new Bird();
-		//abstract 붙어서 객체 생성 안됨
+		customer.buy(tv);
+		
+		
+		
 		
 	}
-	
+
 }
