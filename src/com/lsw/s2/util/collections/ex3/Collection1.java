@@ -16,9 +16,9 @@ public class Collection1 {
 		
 	}
 	
-	public Map<String, Integer> makeMap() {
-		
-	}
+//	public Map<String, Integer> makeMap() {
+//		 
+//	}
 	
 	
 	
