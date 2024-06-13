@@ -30,6 +30,7 @@ public class FileWriteMain {
 				System.out.println(flag);
 				
 				fw.write(s+ "\r\n");
+				fw.flush();
 			}//while문 종료
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
