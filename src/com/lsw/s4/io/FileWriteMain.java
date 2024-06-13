@@ -21,7 +21,7 @@ public class FileWriteMain {
 			fw = new FileWriter(file, true);
 			
 			String flag = "";
-			while(flag != "e") {	
+			while(!flag.equals("e")) {	
 				System.out.println("내용 입력 : ");
 				String s = sc.next();
 				
