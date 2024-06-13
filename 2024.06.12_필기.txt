@@ -48,6 +48,7 @@ Server요청
 		
 	4. JS location.href 객체 : 메서드 형식 무조건 Get
 	5. ajax : Get or Post
-
+	Get은 즉 주소 창에 노출이 된다
+	형식 : url?key=value&key=value
 
 	
