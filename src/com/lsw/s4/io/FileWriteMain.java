@@ -30,7 +30,7 @@ public class FileWriteMain {
 				System.out.println(flag);
 				
 				fw.write(s+ "\r\n");
-				fw.flush();
+				fw.flush(); // 버퍼의 남은 용량을 치워버리기 위함
 			}//while문 종료
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
