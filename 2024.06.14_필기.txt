@@ -1,0 +1,17 @@
+Client -> Server
+
+1. 요청방식
+	1-1) 주소창에 url을 직접 입력 : url?key=value&...
+	1-2) a태그 (href = "url?key=value...")
+
+	1-3) from 태그 (action = "url", method = GET or POST)
+	1-4) location
+	1-5) ajax
+
+
+2. 요청형식
+	URL Method
+
+3. 파라미터(key = value)
+	GET : URL?key=value&key=value& ...
+	POST : 
