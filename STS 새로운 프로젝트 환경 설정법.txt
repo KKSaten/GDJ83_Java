@@ -1,0 +1,16 @@
+
+File -> New-> DynamicWebProject ->
+프로젝트명 입력 -> next -> next ->
+Generate Web.xml 체크하고 finish
+
+Project Explorer 목록에서
+프로젝트명 우클릭 -> Properties ->
+	1) Java Build Path
+		Libraries 탭에서 jdk-17 선택허고 Edit
+		Alternate JRE에서 jdk-11 선택허고 finish
+	2) Java Compiler
+		Compiler compliance level -> 11로 변경허고 apply
+	3) Project Facets 
+		java 17을 11로 변경
+		Dynamic Web Module, Java, JavaScript가 체크되어있는지 확인
+		안되어있다면 체크
