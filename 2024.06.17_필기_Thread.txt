@@ -1,9 +1,27 @@
 
-클라이언트
-1. 학생리스트
-2. 학생상세정보리스트
-3. 종료
 
 
-서버
+변수 하나에 담을 수 있는 데이터는 하나
+-> 그렇다면 여러개를 담으려면?
+	a. 배열
+	b. List
+	c. Set
+	d. Map
 
+
+
+
+
+Thread
+(작업 단위)
+
+Process = 일꾼(Thread) + 자원
+
+
+
+
+Library + 디자인 패턴
+Framework
+
+개발자는 핵심코드에 집중
+POJO : Plain Old Java Object

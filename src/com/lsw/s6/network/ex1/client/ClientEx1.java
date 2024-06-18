@@ -1,4 +1,4 @@
-package com.lsw.s6.network;
+package com.lsw.s6.network.ex1.client;
 
 import java.io.BufferedReader;
 import java.io.IOException;
